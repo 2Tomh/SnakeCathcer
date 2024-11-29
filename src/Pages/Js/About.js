@@ -58,7 +58,7 @@ function About(props) {
                                 }}
                                 onClick={() => window.location.href = `tel:${phone}`}
                             >
-                                <Typography className={styles.button} sx={{ fontSize: "1.5rem", fontWeight: "Bold",gap:"38px" }}>
+                                <Typography className={styles.button} sx={{ fontSize: "1.5rem", fontWeight: "Bold",gap:"0px" }}>
                                     התקשרו עכשיו!
                                     <LocalPhoneRoundedIcon />
                                 </Typography>
