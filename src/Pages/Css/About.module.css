@@ -1,0 +1,49 @@
+.button {
+  display: flex;
+  background-color: #8ff460;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: black;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.7), 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+  direction: rtl;
+  position: absolute;
+  gap: 10%;
+  left: 10%;
+  width: 13%;
+  font-size: "1.1rem";
+  font-weight: "Bold",
+
+}
+
+.facebook {
+  display: flex;
+  background-color: #8ff460;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: black;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.7), 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+  direction: rtl;
+  position: absolute;
+  gap: 10%;
+  left: 10%;
+  width: 13%;
+  font-size: "1.1rem";
+  font-weight: "Bold"
+}
+
+.whatsapp {
+  display: flex;
+  background-color: #8ff460;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: black;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.7), 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+  direction: rtl;
+  position: absolute;
+  gap: 10%;
+  left: 10%;
+  width: 13%;
+  font-size: "1.1rem";
+  font-weight: "Bold",
+  
+}

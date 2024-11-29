@@ -1,0 +1,30 @@
+.blueBox {
+    background: linear-gradient(90deg, #90caf9, #047edf 99%);
+}
+
+.box img {
+    position: absolute;
+    right: 0;
+
+}
+
+.box {
+    width: 250px;
+    height: 219px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 5px 10px 5px rgba(186, 66, 66, 0.2);
+
+}
+.boxContainer {
+    display: flex;
+    gap: 70px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
