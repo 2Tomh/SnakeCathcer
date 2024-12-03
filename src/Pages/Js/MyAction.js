@@ -49,9 +49,11 @@ function MyAction() {
                 <Box
                     className={`${styles.blueBox} ${styles.box}`}
                     style={{ textAlign: "center" }}>
+
                     <img src={bubbles} />
                     <Typography variant="h4" style={{ fontSize: "2rem" }}>לוכד מוסמך מטעם רשות הטבע והגנים</Typography>
                     <Typography variant="h5" style={{ fontSize: "1.45rem" }}>בעל היתר לכידה ושחרור בתוקף</Typography>
+
                 </Box>
 
                 <Box
@@ -85,16 +87,25 @@ function MyAction() {
                     paddingRight: "auto",
                 }}
             >
-                <h1 style={{direction:"rtl"}}><strong>אז למה לקרוא לי ולא להתמודד עם הנחש בעצמכם?</strong></h1>
+                <h1 style={{ direction: "rtl" }}><strong>אז למה לקרוא לי ולא להתמודד עם הנחש בעצמכם?</strong></h1>
                 <ul style={{ fontSize: "1.45rem", direction: "rtl" }}>
-                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > כל הנחשים בישראל הינם חיה מוגנת על פי חוק אשר לכידה/פגיעה בה (לרבות הרגיתה) מהווים עבירה פלילית</Typography></li>
-                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > רק לוכד נחשים מוסמך, שעבר קורס מורשה מטעם רשות הטבע והגנים, רשאי ללכוד ולשחרר נחשים </Typography></li>
+                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} >
+                       כל הנחשים בישראל הינם חיה מוגנת על פי חוק אשר לכידתה, פגיעה בה (לרבות הריגתה) מהווים עבירה פלילית                        שדינה שנתיים מאסר או קנס כספי של אלפיי ש''ח
+                        </Typography></li>
+                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > רק לוכד נחשים מוסמך, שעבר קורס מורשה מטעם הרט''ג(רשות הטבע והגנים) רשאי ללכוד ולשחרר נחשים
+                    </Typography></li>
+                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > אני חד חושים, עירני, ובעל נסיון רב. אצליח בסבירות גבוהה יותר למצוא את הנחש מבלי להסתכן.
+                    </Typography></li>
+                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > אני חי נחשים מילדות, מכיר בעל פה כל נחש שחי בארצינו</Typography></li>
                     <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > מסביר פנים, מכבד את הבית ויושביו</Typography></li>
-                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > אני חי נחשים מילדות, מכיר בעל פה כל נחש שחי בארנו</Typography></li>
-                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > רוכש כבוד לבעלי החים הללו ויודע מה חשיבותם לטבע שלנו</Typography></li>
+
+                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > לעולם לא אנצל מצוקת אדם בשעתו הקשה (יודע כמה מלחיץ יכול להיות נחש בבית) כדי לגבות מחיר מוגזם.
+                    </Typography></li>
+
+                    <li><Typography variant="h5" style={{ fontSize: "1.45rem" }} > רוכש כבוד לבעלי החיים הללו וידע מה חשיבותם לטבע שלנו.</Typography></li>
                 </ul>
             </Box>
-            
+
         </Box>
 
     )

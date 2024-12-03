@@ -36,9 +36,9 @@ function About(props) {
                 src={Logo}
                 alt="Logo"
                 sx={{
-                    width: isDesktop ? "70%" : "40%",
+                    width: isDesktop ? "70%" : "100%",
                     position: "absolute",
-                    transform: 'translate(39%, -10%)',
+                    transform: isDesktop ? 'translate(39%, -10%)': 'transform: translate(-4.8%, -13%);' ,
                     maxHeight: "100%",
                 }}
             />
@@ -58,7 +58,7 @@ function About(props) {
                                 }}
                                 onClick={() => window.location.href = `tel:${phone}`}
                             >
-                                <Typography className={styles.button} sx={{ fontSize: "1.5rem", fontWeight: "Bold",gap:"0px" }}>
+                                <Typography className={styles.button} sx={{ fontSize: "1.5rem", fontWeight: "Bold" }}>
                                     התקשרו עכשיו!
                                     <LocalPhoneRoundedIcon />
                                 </Typography>

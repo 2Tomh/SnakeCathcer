@@ -98,12 +98,12 @@ function HomePage() {
                         variant="h6"
                     >
                         <ul style={{ listStyleType: "none", direction: "rtl", textAlign: "justify" }}>
-                            <h3><strong style={{color:"red"}}>בזמן הזה</strong> חשוב!</h3>
+                            <h3>בזמן הזה<strong style={{color:"red"}}> חשוב!</strong> </h3>
                             
                             <li style={{ direction: "rtl" }}>לא להתקרב לנחש</li>
-                            <li style={{ direction: "rtl" }}>להימנע ממגע איתו</li>
-                            <li style={{ direction: "rtl" }}>לשמור על קשר עין שלא יברח</li>
-                            <li style={{ direction: "rtl" }}>לא לבצע פעולות שעשוישות להבריח אותו למקומות לא נגישים</li>
+                            <li style={{ direction: "rtl" }}>לא לבצע פעולות שעשויות להבריח אותו למקומות לא נגישים</li>
+                            <li style={{ direction: "rtl" }}>לנסות לשמור על קשר עין (ממרחק)</li>
+                            <li style={{ direction: "rtl" }}> אם אפשר לצלמו– מה טוב (לא חובה בכלל).</li>
                         </ul>
                     </Typography>
                 </Box>
