@@ -1,4 +1,4 @@
-.button {
+.Typo {
   display: flex;
   background-color: #8ff460;
   border-radius: 15px;
@@ -6,44 +6,67 @@
   color: black;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.7), 0 3px 5px 0 rgba(0, 0, 0, 0.7);
   direction: rtl;
-  position: absolute;
-  gap: 10%;
-  left: 10%;
-  width: 13%;
-  font-size: "1.1rem";
-  font-weight: "Bold",
+  gap: 10px;
+  width:fit-content;
+  font-size: 1.5rem !important;
+  font-weight: Bold;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  left:20px
 
 }
 
-.facebook {
-  display: flex;
-  background-color: #8ff460;
-  border-radius: 15px;
-  padding: 5px 10px;
-  color: black;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.7), 0 3px 5px 0 rgba(0, 0, 0, 0.7);
-  direction: rtl;
-  position: absolute;
-  gap: 10%;
-  left: 10%;
-  width: 13%;
-  font-size: "1.1rem";
-  font-weight: "Bold"
+.boxContainer {
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+
 }
 
-.whatsapp {
+.buttonStyles {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.liStyle {
   display: flex;
-  background-color: #8ff460;
-  border-radius: 15px;
-  padding: 5px 10px;
-  color: black;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.7), 0 3px 5px 0 rgba(0, 0, 0, 0.7);
-  direction: rtl;
-  position: absolute;
-  gap: 10%;
-  left: 10%;
-  width: 13%;
-  font-size: "1.1rem";
-  font-weight: "Bold",
+  align-items: center;
+  gap: 10px;
+}
+
+.boxTypo {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-top: 20px;
   
 }
+
+.ulStyle {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+
+  /* @media screen {
+    place-items: center;
+    display: grid;
+    grid-template-columns: "1fr";
+    padding-right: 12%;
+  } */
+}
+
+/* .headLine{
+  @media screen {
+    display: grid;
+    margin-top: 50%;
+    place-content: center;
+  }
+} */

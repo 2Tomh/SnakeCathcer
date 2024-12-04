@@ -1,0 +1,24 @@
+.liStyles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    direction: rtl;
+    margin-bottom: 22px !important;
+}
+
+.imgStyle{
+    height: 50px !important;
+}
+
+.Typo {
+    font-size: 1.5rem !important;
+    direction: rtl;
+}
+
+.boxStyle{
+    text-align: center;
+    text-align: right;
+    width: 88%;
+    margin-top:-15%
+
+}

@@ -1,27 +1,71 @@
 import { Box, Typography } from '@mui/material';
-
+import snake from '../../image/snake1.jpg'
+import styles from '../Css/MyServices.module.css'
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function MyService() {
-
+    const theme = useTheme();
+    const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
     return (
-        <Box style=
-            {{
-                textAlign: "center",
-                textAlign: "right",
-                width: "94%",
-                marginTop: "-15%"
-            }}>
+        <Box className={styles.boxStyle}
+        style={{
+            // text-align: center;
+            // text-align: right;
+            // width: 88%;
+            // margin-top:-15%
+
+
+            width: isDesktop ? "" : "93%",
+            objectFit: "contain",
+            marginBottom: "15%",
+            display: isDesktop ? "" : "flex",
+            flexDirection:isDesktop ? "" : "column",
+            alignItems:isDesktop ? "center" : "end",
+            justifycontent:isDesktop ? "" : "center",
+            textalign:isDesktop ? "right" : "center",
+        }}>
             <h1>שירותים</h1>
             <Typography>
-                <ul style={{ direction: "rtl",  fontSize: "larger" }}>
-                    <li>לכידה של כל זוחל באשר הוא ושחרור רחוק בטבע (בתיאום צמוד עם פקח רשות הטבע והגנים)</li>
-                    <li>סריקה לאיתור ושלילת הימצאות הנחש באזור המבוקש</li>
-                    <li>מתן הסבר אודות הנחש, האם חברים/אחים שלו בסביבה, והאם בכלל הוא מסוכן או שמע מועיל</li>
-                    <li>- מתן פתרונות ודרכים למזעור הגעת נחשים לשטח המגורים</li>
-                    <li><strong style={{ color: "red" }}>לא מדביר!</strong> מחלץ נחשים מאזור המגורים ומשיב לסביבתם הטבעית הרחק מאזורים מיושבים</li>
+                <ul style={{ direction: "rtl" }}>
+                <li className={styles.liStyles} >
+                        <img src={snake} className={styles.imgStyle} />
+                        <Typography className={styles.Typo}>
+                            לכידה של כל זוחל באשר הוא ושחרור רחוק בטבע (בתיאום צמוד עם פקח רשות הטבע והגנים)
+                        </Typography>
+                    </li>
+
+                  <li className={styles.liStyles} >
+                        <img src={snake} className={styles.imgStyle} />
+                        <Typography className={styles.Typo}>
+                            סריקה לאיתור ושלילת הימצאות הנחש באזור המבוקש
+                        </Typography>
+                    </li>
+
+                  <li className={styles.liStyles} >
+                        <img src={snake} className={styles.imgStyle} />
+                        <Typography className={styles.Typo}>
+                            מתן הסבר אודות הנחש, האם חברים/אחים שלו בסביבה, והאם בכלל הוא מסוכן או שמע מועיל
+                        </Typography>
+                    </li>
+
+                  <li className={styles.liStyles} >
+                        <img src={snake} className={styles.imgStyle} />
+                        <Typography className={styles.Typo}>
+                            מתן פתרונות ודרכים למזעור הגעת נחשים לשטח המגורים
+                        </Typography>
+                    </li>
+
+                  <li className={styles.liStyles} >
+                        <img src={snake} className={styles.imgStyle} />
+                        <Typography className={styles.Typo}>
+                            <strong style={{ color: "red" }}>לא מדביר!</strong>
+                            מחלץ נחשים מאזור המגורים ומשיב לסביבתם הטבעית הרחק מאזורים מיושבים
+                        </Typography>
+                    </li>
 
                 </ul>
-            </Typography>
+            </Typography >
 
         </Box >
     )

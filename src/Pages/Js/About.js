@@ -23,10 +23,8 @@ function About(props) {
 
     return (
         <Box
+            className={styles.boxContainer}
             style={{
-                minWidth: "300px",
-                minHeight: "300px",
-                position: "relative",
                 ...containerStyles,
                 padding: isDesktop ? '40px' : '20px'
             }}>
@@ -38,65 +36,68 @@ function About(props) {
                 sx={{
                     width: isDesktop ? "70%" : "100%",
                     position: "absolute",
-                    transform: isDesktop ? 'translate(39%, -10%)': 'transform: translate(-4.8%, -13%);' ,
+                    transform: isDesktop ? 'translate(41%, -11%)' : 'translate(-4.8%, -13%);',
                     maxHeight: "100%",
                 }}
             />
 
             <div style={{ marginLeft: "10%" }}>
-                <h1>?נתקלת בנחש</h1>
+                <h1 
 
-                <Box sx={{ display: "flex", flexDirection: "column", gap: "45px", marginTop: "20px" }}>
-                    <ul style={{ listStyleType: "none", padding: 0, margin: 0, gap: "55px", display: "flex", flexDirection: "column" }}>
-                        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    style={{
+                        display: isDesktop ? "" : "grid",
+                        marginTop: isDesktop ? "" : "45%",
+                        placeContent: isDesktop ? "" : " center",
+                    }}>
+
+
+                    ?נתקלת בנחש</h1>
+
+                <Box className={styles.boxTypo}>
+                    <ul className={styles.ulStyle}
+
+                        style={{
+
+                            display: isDesktop ? "" : "grid",
+                            placeItems: isDesktop ? "" : "center",
+                            gridTemplateColumns: isDesktop ? "" : "1fr",
+                            paddingRight: isDesktop ? "" : "12%",
+                            placeItems: isDesktop ? "" :"center"
+
+
+                        }}>
+                        <li className={styles.liStyle}>
                             <button
-                                style={{
-                                    background: "none",
-                                    border: "none",
-                                    outline: "none",
-                                    boxShadow: "none",
-                                }}
+                                className={styles.buttonStyles}
                                 onClick={() => window.location.href = `tel:${phone}`}
                             >
-                                <Typography className={styles.button} sx={{ fontSize: "1.5rem", fontWeight: "Bold" }}>
-                                    התקשרו עכשיו!
-                                    <LocalPhoneRoundedIcon />
+                                <Typography className={styles.Typo}>
+                                    call me now
+                                    <LocalPhoneRoundedIcon style={{ left: "auto" }} />
                                 </Typography>
                             </button>
                         </li>
 
-                        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                        <li className={styles.liStyle}>
                             <button
-                                style={{
-                                    background: "none",
-                                    border: "none",
-                                    outline: "none",
-                                    boxShadow: "none",
-
-                                }}
+                                className={styles.buttonStyles}
                                 onClick={() => window.location.href = "https://www.facebook.com/share/18yKCrJwd3/"}
                             >
-                                <Typography className={styles.facebook} sx={{ fontSize: "1.5rem", fontWeight: "Bold" , gap:"80px"}}>
+                                <Typography className={styles.Typo} >
                                     Facebook
                                     <FacebookIcon />
                                 </Typography>
                             </button>
                         </li>
 
-                        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                        <li className={styles.liStyle}>
                             <button
-                                style={{
-                                    background: "none",
-                                    border: "none",
-                                    outline: "none",
-                                    boxShadow: "none",
-
-                                }}
+                                className={styles.buttonStyles}
                                 onClick={() => window.location.href = "https://wa.me/+972525682488?text=Hi!%20I%20would%20like%20to%20use your service."}
                             >
-                                <Typography className={styles.whatsapp} sx={{ fontSize: "1.5rem", fontWeight: "Bold" ,height:"unset", gap:"80px"}}>
+                                <Typography className={styles.Typo}>
                                     whatsapp
-                                   <WhatsAppIcon />
+                                    <WhatsAppIcon />
                                 </Typography>
                             </button>
                         </li>
@@ -104,8 +105,8 @@ function About(props) {
                 </Box>
 
 
-            </div>
-        </Box>
+            </div >
+        </Box >
 
 
     );

@@ -7,6 +7,7 @@ import { Box, Paper, Typography } from '@mui/material';
 import About from '../Js/About'
 import MyAction from '../Js/MyAction'
 import MyServics from '../Js/MyService'
+import styles from '../Css/HomePage.module.css'
 
 import slide1 from '../../image/HomePage/img1.jpeg'
 import slide2 from '../../image/HomePage/img2.jpeg'
@@ -43,28 +44,22 @@ function HomePage() {
                 backgroundImageStyles={slideShowBackgroundStyles}
             />
             <Box
+                className={styles.boxContainer}
                 style={{
-                    display: "-webkit-box",
                     flexDirection: isDesktop ? "row" : "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "30px",
+                    display: isDesktop ? "flex" : "flex",
                     margin: isDesktop ? "40px 0px 20px 0px" : "40px 0px 30px 0px",
                     height: isDesktop ? "300px" : "unset",
                 }}
             >
 
                 <Box
+                    className={styles.boxCarosuel}
                     style={{
-                        width: isDesktop ? '30%' : '100%',
-                        objectFit: "contain",
+                        width: isDesktop ? '30%' : '78%',
 
                     }}
-                    sx={{
-                        paddingLeft: "15%",
-                        paddingRight: "auto",
 
-                    }}
                 >
                     <Carousel
                         autoPlay={true}
@@ -76,34 +71,55 @@ function HomePage() {
                 </Box>
 
                 <Box
-                    style={{
-                        width: isDesktop ? "50%" : "100%",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        gap: "30px",
-                        textAlign: 'center',
-                    }}
+                    className={styles.boxTypo}
+                    style={{ width: isDesktop ? "42%" : "100%" }}
                 >
                     <Typography
-                        style={{ fontStyle: "italic", fontFamily: "cursive", direction: "rtl" }}
                         variant="h3"
+                        style={{
+                            fontStyle: "italic",
+                            fontFamily: "cursive",
+                            direction: "rtl",
+                            display: isDesktop ? "" : "grid",
+                            placeItems: isDesktop ? "" : "center",
+                            gridTemplateColumns: isDesktop ? "" : "1fr",
+                            paddingRight: isDesktop ? "" : "20px",
+                            placeItems: isDesktop ? "" : "center"
+                        }}
                     >
                         נתקלת בנחש או כל זוחל אחר, בבית או בחצר?
                     </Typography>
 
                     <Typography
-                        style={{ fontFamily: "system-ui" }}
+                        style={{ fontFamily: "system-ui", direction: "rtl" }}
                         variant="h6"
                     >
-                        <ul style={{ listStyleType: "none", direction: "rtl", textAlign: "justify" }}>
-                            <h3>בזמן הזה<strong style={{color:"red"}}> חשוב!</strong> </h3>
-                            
-                            <li style={{ direction: "rtl" }}>לא להתקרב לנחש</li>
-                            <li style={{ direction: "rtl" }}>לא לבצע פעולות שעשויות להבריח אותו למקומות לא נגישים</li>
-                            <li style={{ direction: "rtl" }}>לנסות לשמור על קשר עין (ממרחק)</li>
-                            <li style={{ direction: "rtl" }}> אם אפשר לצלמו– מה טוב (לא חובה בכלל).</li>
+                        <ul className={styles.ulStyle}
+                        style={{
+                           
+                            display: isDesktop ? "" : "grid",
+                            placeItems: isDesktop ? "" : "center",
+                            gridTemplateColumns: isDesktop ? "" : "1fr",
+                            paddingRight: isDesktop ? "" : "10px",
+                            placeItems: isDesktop ? "" : "center",
+                            width: isDesktop ? "" : "max-content"
+                        }}
+                    >
+                            <h3>בזמן הזה<strong style={{ color: "red" }}> חשוב!</strong> </h3>
+
+                            <li >
+                                <Typography className={styles.Typo}>לא להתקרב לנחש</Typography>
+                            </li>
+                            <li >
+                                <Typography className={styles.Typo}>לא לבצע פעולות שעשויות להבריח אותו למקומות לא נגישים</Typography>
+                            </li>
+                            <li >
+                                <Typography className={styles.Typo}>לנסות לשמור על קשר עין (ממרחק)</Typography>
+
+                            </li>
+                            <li >
+                                <Typography className={styles.Typo}>אם אפשר לצלמו– מה טוב (לא חובה בכלל)</Typography>
+                            </li>
                         </ul>
                     </Typography>
                 </Box>
